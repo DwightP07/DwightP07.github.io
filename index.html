@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de vida</title>
+</head>
+
+<link rel="stylesheet" href="fondo2.css">
+<link rel="stylesheet" href="menu.css">
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<body>
+    <header>
+        <a href="menu.html" class="logo">
+            <img src="logo.jpg" alt="">
+            <h2 class="titulo text-xl">Proyecto de vida</h2>
+        </a>
+        <nav>
+            <!-- <a href="caratula.html" class="nav-link">Caratula</a>
+            <a href="personalidad.html" class="nav-link">Personalidad</a>
+            <a href="autorretrato.html" class="nav-link">Retrato</a>
+            <a href="acrostico.html" class="nav-link">Acrostico</a>
+            <a href="biografia.html" class="nav-link">Biografia</a>
+            <a href="visionymision.html" class="nav-link">VisMis</a>
+            <a href="metasyaliados.html" class="nav-link">MetAli</a>
+            <a href="valores.html" class="nav-link">Valores</a>
+            <a href="estrategias.html" class="nav-link">Estrategias</a>
+            <a href="foda.html" class="nav-link">FODA</a> -->
+        </nav>
+    </header>
+    <div class="wavy">
+        <!----wave svg--->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <h1 class="titulo2">Proyecto de vida</h1>
+        <h2 class="byme">por Dwight Perez</h2>
+    </div>
+    <br><br>
+    
+    <br><br>
+    <div id="card-caratula"class="todo">
+        <div class="cajita">
+            <h2 class="font-semibold">Caratula</h2>
+            <p>Una pequeña introduccion sobre mi, mi nombre, mi profesor, y una foto mia para poder identificarme</p>
+            <button class="ver" onclick="mostrarModal()">ver mas</button>
+        </div>
+        <br><br>
+        <div class="cajita">
+            <h2 class="font-semibold">Personalidad</h2>
+            <p>Cuento sobre mi personalidad, no a detalle pero si digo lo necesario para conocerme</p>
+            <br>
+            <button class="ver" onclick="mostrarModalpersonalidad()">ver mas</button>      
+        </div>
+        <br><br>
+        <div class="cajita">
+            <h2 class="font-semibold">Autorretrato</h2>
+            <p>Aqui muestro y explico un poco de mi autorretrato, no es un dibujo muy complicado pero si me esforce haciendolo</p>
+            <button class="ver" onclick="mostrarModalautorretrato()">ver mas</button> 
+        </div>
+        <br><br>
+        <div class="cajita">
+            <h2 class="font-semibold">Acrostico</h2>
+            <p>Un acrostico de mi nombre, con caracteristicas de mi persona, personalidad etc...</p>
+            <button class="ver" onclick="mostrarModalacrostico()">ver mas</button> 
+        </div>
+        <br><br>
+        <div class="cajita">
+            <h2 class="font-semibold">Biografia</h2>
+            <p>La historia de mi vida resumida en 4 etapas, infancia, niñez, adolecencia y juventud</p>
+            <br>
+            <button class="ver" onclick="mostrarModalbiografia()">ver mas</button>
+        </div>
+        <br><br>
+        <div class="cajita">
+            <h2 class="font-semibold">Vision y Mision</h2>
+            <p>Mi vision y mision personal, lo que quiero hacer y hare, en pocas palabras</p>
+            <br>
+            <button class="ver" onclick="mostrarModalvismis()">ver mas</button>
+        </div>
+        <br><br>
+        <div class="cajita">
+            <h2 class="font-semibold">Metas y Aliados</h2>
+            <p>Las metas que tengo, y mis aliados en cuestiones de la vida</p>
+            <button class="ver" onclick="mostrarModalmetyali()">ver mas</button>
+        </div>
+        <br><br>
+        <div class="cajita">
+            <h2 class="font-semibold">Valores</h2>
+            <p>Los valores que tengo como persona, ya que los valores son muy importantes en alguien</p>
+            <a href="valores.html" class="ver">ver mas</a>
+        </div>
+        <br><br>
+        <div class="cajita">
+            <h2 class="font-semibold">Estrategias</h2>
+            <p>Estrategias que pondre en practica en las areas prioritarias</p>
+            <a href="estrategias.html" class="ver">ver mas</a>
+        </div>
+        <br><br>
+        <div class="cajita">
+            <h2 class="font-semibold">FODA</h2>
+            <p>El FODA, mis fortalezas, oportunidades, debilidades y amenazas</p>
+            <a href="foda.html" class="ver">ver mas</a>
+        </div>
+    </div>
+    <br><br>
+
+
+
+
+
+
+
+    <!-- modal -->
+
+    <div id="modalCaratula" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Caratula</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">
+                        <div class="flex w-full justify-center">
+                            <img src="yo.jpeg" width="120" class="box-img border-4 border-double">
+                        </div>
+                        <br>
+                            <h2 class="font-semibold">Dwight Dalessandro Perez Reyes</h2>
+                            <h2><strong>Profesor:</strong> Ronan</h2>
+                            <h2 class="font-semibold">5to Bachillerato en Computacion con orientacion cientifica</h2>
+                            <h2 class="font-semibold">Seccion "A"</h2>
+                            <br>
+                            <p>Soy una persona bastante timida, pero la verdad me gusta socializar, me preocupo por mis amigos, familiares, 
+                                todos los que me rodean, amo las hamburguesas, son mi comida favorita, aparte que comer es de mis cosas favoritas tambien
+                                me gusta mucho escuchar musica, me la pasaria todo el día escuchando musica de ser posible, tambien me gusta dibujar, 
+                                y se cocinar, un poco.
+                            </p>
+                            <br>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModal()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--modalpersonalidad-->
+      <div id="modalpersonalidad" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Personalidad</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">
+                        <br>
+                        <img src="personalidad.jpg" width="" alt="">
+                        <br>
+                        <p>Soy muy energetico, y a la vez flojo, cuando estoy de humor me pongo a hacer lo que sea con tal de hacer algo,
+                            soy una persona que escucha, me gusta escuchar a los demas, porque me cuentan sus problemas y me hace sentir que
+                            les estoy siendo de ayuda, quizas para los consejos sea malo, pero tambien los doy. <br> Mi humor se basa mucho en la ironia,
+                            soy muy ironico y me gusta molestar, cuando me siento triste me pongo a pensar en cosas buenas o escucho musica para que se me pase,
+                            tambien bromeo para poder sentirme mejor.
+                        </p>
+                            <br><br>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModalpersonalidad()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--modalautorretrato-->
+      <div id="modalautorretrato" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Autorretrato</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">
+                        <div class="flex w-full justify-center">
+                            <img src="autorretratoo.jpeg" width="120">
+                            <img src="micara.jpeg" width="120">
+                        </div>
+                        <br>
+                        <p>Nuestro profe dijo que dibujarnos era importante, porque demostrabamos como nos veiamos a nosotros mismos,
+                            me veo casi igual, pero sobre todo creo que hice un buen trabajo
+                            haciendo mi autorretrato, y ya que se dibujar en verdad no me tarde mucho, unos 30 minutos o mas
+                        </p>
+                            <br>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModalautorretrato()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--modalAcrostico-->
+      <div id="modalacrostico" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Acrostico</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">
+                        <div class="flex w-full justify-center">
+                            <img src="Acrostico.jpeg" class="box-img border-4 border-double">
+                        </div>
+                        <br>
+                            <br>
+                            <p>En este acrostico intente poner caracteristicas sobre mi, en la D, Divertido, en la W, no hay palabras con w, asi que puse wisky,
+                                , en la I corrijo, quise decir Imaginativo, en la G, guapo porque tengo autoestima, H de humilde, y T, me gustaria corregir a tolerante
+                                ya que no se me ocurrio en el momento</p>
+                            <br>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModalacrostico()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--modalBiografia-->
+      <div id="modalbiografia" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Biografia</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">
+                        <div class="flex w-full justify-center">
+                            <img src="baby.jpeg" width="" class="">
+                        </div>
+                        <br>
+                            <h2 class="font-semibold">Infancia</h2>
+                            <br>
+                            <p>
+                                Aqui una foto de cuando apenas era un bebé, obviamente no recuerdo nada pero algo a destacar es que mi hermano menciono que
+                                el me enseño a salirme del carruaje por mi cuenta
+                            </p>
+                            <br>
+                        <div class="flex w-full justify-center">
+                            <img src="peque.jpeg" width="250" alt="">
+                        </div>
+                            <br>
+                            <h2 class="font-semibold">Niñez</h2>
+                            <p>
+                                Aqui tengo alrededor de 4 o 5 años, cuando cobre conciencia, literalmente recuerdo el día que desperto mi conciencia, estaba parado
+                                en las escaleras de mi casa, yendo a almorzar porque mi madre me habia llamado
+                            </p>
+                            <br>
+                        <div class="flex w-full justify-center">
+                            <img src="adolecente.jpeg" width="250" alt="">
+                        </div>
+                            <br>
+                            <h2 class="font-semibold">Adolecencia</h2>
+                            <p>
+                                En esta foto tengo 14 años, esta etapa de mi vida fue pesima la verdad, no entraremos a detalle, resumiendo no tenia autoestima, me la pasaba triste
+                                por cuestiones personales y por la pandemia
+                            </p>
+                            <br>
+                        <div class="flex w-full justify-center">
+                            <img src="yo.jpeg" width="250">
+                        </div>
+                            <br>
+                            <h2 class="font-semibold">Juventud</h2>
+                            <br>
+                            <p>
+                                Ya actualmente con 17 años, diria que estoy bastante bien conmigo mismo en comparacion a mi etapa anterior, obviamente siempre hay cosas que cambiar y
+                                estoy en proceso de mejorar como persona
+                            </p>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModalbiografia()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--modalVision y Mision-->
+      <div id="modalvismis" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Vision Y mision</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">                      
+                        <br>
+                            <h2 class="font-semibold">Vision</h2>
+                            <br>
+                            <div class="flex w-full justify-center">
+                                <img src="vision.jpg" width="">
+                            </div>
+                            <br>
+                            <p>Un gran trabajo en una buenisima empresa como programador para poder ganar bastante dinero y así poder ayudar a mi mamá economicamente
+                                y poder ya sea comprarle una casa, ropa, zapatos y lo que ella quiera en pocas palabras, obviamente tambien comprarme mis caprichos, tambien
+                                estar fisica y mentalmente bien, y tambien vivir en nuestra linda casa con mi esposa.
+                            </p>
+                            <br>
+                            <h2 class="font-semibold">Mision</h2>
+                            <br>
+                            <div class="flex w-full justify-center">
+                                <img src="mision.png" width="">
+                            </div>
+                            <br>
+                            <p>Ser un gran programador, tan bueno que muchas empresas querran contratarme, hasta incluso trabajar para empresas fuera del pais, porque mi conocimiento sera muy bueno en lo que es programacion en 
+                                general, tal conocimiento me abrira muchas puertas, ademas estar economicamente estable, hasta mas que eso, trabajare de lo que me gusta y apasiona.
+                            </p>
+                            <br>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModalvismis()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--modalMetas y Aliados-->
+      <div id="modalmetyali" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Metas y Aliados</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">
+                        <br>
+                            <h2 class="text-red-600 text-center text-4xl">Metas</h2><br>
+                            <img src="metas.jpg" alt="">
+                            <br>
+                            <h2 class="text-red-600 text-2xl">Laboral</h2><br>
+                            <h2 class="font-semibold">Corto plazo</h2><br>
+                            <p>Trabajar con mi padre en topografia como su ayudante</p><br>
+                            <h2 class="font-semibold">Mediano plazo</h2><br>
+                            <p>Trabajando como programador haciendo trabajos pequeños o incluso uno que otro 
+                                proyecto grande, en el tema de paginas web
+                            </p><br>
+                            <h2 class="font-semibold">Largo plazo</h2><br>
+                            <p>Trabajando como programador de paginas web, apps, videojuegos etc...
+                               ademas teniendo grandes proyectos de programacion en una buena empresa
+                            </p>
+                            <br>
+                            <h2 class="text-red-600 text-2xl">Academico</h2><br>
+                            <h2 class="font-semibold">Corto plazo</h2><br>
+                            <p>Terminar mi bachillerato en computacion graduandome con honores y terminar las practicas</p><br>
+                            <h2 class="font-semibold">Mediano plazo</h2><br>
+                            <p>Tomar cursos en el itecap para ir aprendiendo mas programacion ya sea de Java o cualquier otro lenguaje,
+                                preferible si es algo que tiene que ver con paginas web
+                            </p><br>
+                            <h2 class="font-semibold">Largo plazo</h2><br>
+                            <p>Ir a la universidad a estudiar Ingenieria en sistemas</p><br>
+                            <h2 class="text-red-600 text-2xl">Espiritual</h2><br>
+                            <h2 class="font-semibold">Corto Plazo</h2><br>
+                            <p>Leer mas la biblia porque de vez en cuando lo hago y quiero estar mas cerca de Dios</p><br>
+                            <h2 class="font-semibold">Mediano plazo</h2><br>
+                            <p>Tener una buena relacion con Dios y haber leido la biblia enter,a por consecuencia estar bien informado de temas biblicos</p><br>
+                            <h2 class="font-semibold">Largo plazo</h2><br>
+                            <p>poder servirle mas a Dios, no solo leyendo la Biblia, si no obedeciendo sus normas y hacer lo que a el le gusta</p><br>
+                            <h2 class="text-red-600 text-2xl">Familiar</h2><br>
+                            <h2 class="font-semibold">Corto plazo</h2><br>
+                            <p>Vivir con mis padres, sigo siendo joven, porque deberia mudarme</p><br>
+                            <h2 class="font-semibold">Mediano plazo</h2><br>
+                            <p>Seguir viviendo en casa de mis padres, porque la voy a heredar, y tengo planes de remodelar</p><br>
+                            <h2 class="font-semibold">Largo plazo</h2><br>
+                            <p>Poder comprar una casa propia y vivir con mi madre si sigo soltero, si no, viviria con mi esposa</p><br>
+                            <h2 class="text-red-600 text-2xl">Social</h2><br>
+                            <h2 class="font-semibold">Corto plazo</h2><br>
+                            <p>Estar bien con mis amigos actuales porque los aprecio de verdad</p><br>
+                            <h2 class="font-semibold">Mediano plazo</h2><br>
+                            <p>Poder conocer mas gente ya sea estudiando o trabajando, para poder hacer mas amigos y obvio conservar a mis amigos
+                                actuales
+                            </p><br>
+                            <h2 class="font-semibold">Largo plazo</h2><br>
+                            <p>Conocer a bastante gente, conocer a muchas personas tiene sus ventajas, te pueden hacer un favor en algo
+                                o con alguien
+                            </p><br>
+                            <h2 class="text-red-600 text-2xl">Emocional</h2><br>
+                            <h2 class="font-semibold">Corto plazo</h2><br>
+                            <p>Poder resolver mis problemas actuales y estar bien con mi familia porque quiero que estemos felices todos</p><br>
+                            <h2 class="font-semibold">Mediano plazo</h2><br>
+                            <p>Estar mayormente feliz con los que me rodean, familia, amigos, relaciones etc...</p><br>
+                            <h2 class="font-semibold">Largo plazo</h2><br>
+                            <p>Ser una persona sin preocupaciones, estar feliz con hasta los mas pequeños detalles de la vida, y dejar de estar desanimado</p><br>
+                            <h2 class="text-red-600 text-2xl">Fisico</h2><br>
+                            <h2 class="font-semibold">Corto plazo</h2><br>
+                            <p>Ir al gimnasio mas seguido y ser constante con ello para sentar las bases en mi cuerpo e ir formandolo</p><br>
+                            <h2 class="font-semibold">Mediano plazo</h2><br>
+                            <p>Estar ya algo musculoso, no tanto, pero si que mi cuerpo deje de estar delgado</p><br>
+                            <h2 class="font-semibold">Largo plazo</h2><br>
+                            <p>Siendo musculoso, con una buena espalda, unos buenos brazos, tambien con un buen pecho</p><br>
+                            <br>
+                                <h2 class="text-red-600 text-center text-4xl">Aliados</h2><br>
+                           <img src="aliados.png" class="flex w-full justify-center"><br>
+                           <h2 class="text-red-600 text-2xl">Laboral</h2><br>
+                           <ul class="list-disc font-semibold">
+                            <li>Mi Padre</li>
+                            <li>Mi Madre</li>
+                            <li>Mi hermana</li>
+                           </ul><br>
+                           <h2 class="text-red-600 text-2xl">Academico</h2><br>
+                           <ul class="list-disc font-semibold">
+                            <li>Mi Madre</li>
+                            <li>Mis Maestros</li>
+                            <li>Mis amigos</li>
+                           </ul><br>
+                           <h2 class="text-red-600 text-2xl">Espiritual</h2>
+                           <ul class="list-disc font-semibold">
+                            <li>Dios</li>
+                            <li>Mi madre</li>
+                            <li>Mi Hermano</li>
+                           </ul><br>
+                           <h2 class="text-red-600 text-2xl">Fisico</h2>
+                           <ul class="list-disc font-semibold">
+                            <li>My gym bro</li>
+                            <li>Mi padre</li>
+                            <li>Mi amigo Romeito</li>
+                           </ul><br>
+                           <h2 class="text-red-600 text-2xl">Familiar</h2>
+                           <ul class="list-disc font-semibold">
+                            <li>Mi Madre</li>
+                            <li>Mi Hermano</li>
+                            <li>Mi tia, de parte de mi madre</li>
+                           </ul><br>
+                           <h2 class="text-red-600 text-2xl">Emocional</h2>
+                           <ul class="list-disc font-semibold">
+                            <li>Mis amigos</li>
+                            <li>Mi madre</li>
+                            <li>Mi mejor amiga</li>
+                           </ul><br>
+                           <h2 class="text-red-600 text-2xl">Social</h2>
+                           <ul class="list-disc font-semibold">
+                            <li>Mis amigos</li>
+                            <li>Mi mejor amiga</li>
+                            <li>Mi otra amiguita</li>
+                           </ul><br>
+                           <h2 class="text-red-600 text-2xl">Economico</h2>
+                           <ul class="list-disc font-semibold">
+                            <li>Mi Madre</li>
+                            <li>Mi Padre</li>
+                            <li>Mis ganas de ahorrar</li>
+                           </ul><br>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModalmetyali()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function mostrarModal() {
+            document.querySelector("#modalCaratula").classList.remove("hidden");
+        }
+
+        function ocultarModal() {
+            document.querySelector("#modalCaratula").classList.add("hidden");
+        }
+        function mostrarModalpersonalidad() {
+            document.querySelector("#modalpersonalidad").classList.remove("hidden");
+        }
+
+        function ocultarModalpersonalidad() {
+            document.querySelector("#modalpersonalidad").classList.add("hidden");
+        }
+        function mostrarModalautorretrato() {
+            document.querySelector("#modalautorretrato").classList.remove("hidden");
+        }
+        function ocultarModalautorretrato() {
+            document.querySelector("#modalautorretrato").classList.add("hidden");
+        }
+        function mostrarModalacrostico() {
+            document.querySelector("#modalacrostico").classList.remove("hidden");
+        }
+
+        function ocultarModalacrostico() {
+            document.querySelector("#modalacrostico").classList.add("hidden");
+        }
+        function mostrarModalbiografia() {
+            document.querySelector("#modalbiografia").classList.remove("hidden");
+        }
+
+        function ocultarModalbiografia() {
+            document.querySelector("#modalbiografia").classList.add("hidden");
+        }
+        function mostrarModalvismis() {
+            document.querySelector("#modalvismis").classList.remove("hidden");
+        }
+
+        function ocultarModalvismis() {
+            document.querySelector("#modalvismis").classList.add("hidden");
+        }
+        function mostrarModalmetyali() {
+            document.querySelector("#modalmetyali").classList.remove("hidden");
+        }
+
+        function ocultarModalmetyali() {
+            document.querySelector("#modalmetyali").classList.add("hidden");
+        }
+      </script>
+      
+</body>
+</html>
