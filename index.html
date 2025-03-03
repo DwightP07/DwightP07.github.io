@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de vida</title>
 </head>
+<style>
+  .table-foda th, .table-foda td{
+    border: solid 1px;
+  }
+</style>
 
 <link rel="stylesheet" href="fondo2.css">
 <link rel="stylesheet" href="menu.css">
@@ -37,74 +42,81 @@
     <br><br>
     
     <br><br>
-    <div id="card-caratula"class="todo">
+    <div class="container w-full flex justify-center">
+
+   
+    <div id="card-caratula"class="flex justify-center flex-wrap w-2/3 gap-x-50 gap-y-12">
         <div class="cajita">
             <h2 class="font-semibold">Caratula</h2>
             <p>Una pequeña introduccion sobre mi, mi nombre, mi profesor, y una foto mia para poder identificarme</p>
             <button class="ver" onclick="mostrarModal()">ver mas</button>
         </div>
-        <br><br>
+        
         <div class="cajita">
             <h2 class="font-semibold">Personalidad</h2>
             <p>Cuento sobre mi personalidad, no a detalle pero si digo lo necesario para conocerme</p>
             <br>
             <button class="ver" onclick="mostrarModalpersonalidad()">ver mas</button>      
         </div>
-        <br><br>
+        
         <div class="cajita">
             <h2 class="font-semibold">Autorretrato</h2>
             <p>Aqui muestro y explico un poco de mi autorretrato, no es un dibujo muy complicado pero si me esforce haciendolo</p>
             <button class="ver" onclick="mostrarModalautorretrato()">ver mas</button> 
         </div>
-        <br><br>
+        
         <div class="cajita">
             <h2 class="font-semibold">Acrostico</h2>
             <p>Un acrostico de mi nombre, con caracteristicas de mi persona, personalidad etc...</p>
             <button class="ver" onclick="mostrarModalacrostico()">ver mas</button> 
         </div>
-        <br><br>
+        
         <div class="cajita">
             <h2 class="font-semibold">Biografia</h2>
             <p>La historia de mi vida resumida en 4 etapas, infancia, niñez, adolecencia y juventud</p>
             <br>
             <button class="ver" onclick="mostrarModalbiografia()">ver mas</button>
         </div>
-        <br><br>
+        
         <div class="cajita">
             <h2 class="font-semibold">Vision y Mision</h2>
             <p>Mi vision y mision personal, lo que quiero hacer y hare, en pocas palabras</p>
             <br>
             <button class="ver" onclick="mostrarModalvismis()">ver mas</button>
         </div>
-        <br><br>
+        
         <div class="cajita">
             <h2 class="font-semibold">Metas y Aliados</h2>
             <p>Las metas que tengo, y mis aliados en cuestiones de la vida</p>
             <button class="ver" onclick="mostrarModalmetyali()">ver mas</button>
         </div>
-        <br><br>
+        
         <div class="cajita">
             <h2 class="font-semibold">Valores</h2>
             <p>Los valores que tengo como persona, ya que los valores son muy importantes en alguien</p>
-            <a href="valores.html" class="ver">ver mas</a>
+            <button class="ver" onclick="mostrarModalvalores()">ver mas</button>
         </div>
-        <br><br>
+        
         <div class="cajita">
             <h2 class="font-semibold">Estrategias</h2>
             <p>Estrategias que pondre en practica en las areas prioritarias</p>
             <a href="estrategias.html" class="ver">ver mas</a>
         </div>
-        <br><br>
+        
         <div class="cajita">
             <h2 class="font-semibold">FODA</h2>
             <p>El FODA, mis fortalezas, oportunidades, debilidades y amenazas</p>
-            <a href="foda.html" class="ver">ver mas</a>
+            <button class="ver" onclick="mostrarModalFODA()">ver mas</button>
         </div>
     </div>
+  </div>
     <br><br>
-
-
-
+    <footer class="bg-orange-500 text-white text-center p-4">
+      <p>2025 Proyecto de vida</p>
+    </footer>
+    
+    
+    
 
 
 
@@ -534,6 +546,113 @@
           </div>
         </div>
       </div>
+      
+      <!--modalValores-->
+      <div id="modalvalores" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Valores</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">
+                        <div class="flex w-full justify-center">
+                            <img src="valores.jpeg" width="" class="box-img">
+                        </div>
+                        <br>
+                            <br>
+                            <p>Aqui muestro cuales son mis valores en las areas prioritarias.
+                            </p>
+                            <br>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModalvalores()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--modalestrategias-->
+      <!--modalFODA-->
+      <div id="modalFODA" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">FODA</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">
+                        <br>
+                        <table class="table-foda border-collapse border border-gray-400 table-none md:table-fixed">
+                          <thead>
+                            <tr>
+                              <th class="bg-blue-300">F(Fortalezas)</th>
+                              <th class="bg-green-300">O(Oportunidades)</th>
+                              <th class="bg-red-300">D(Debilidades)</th>
+                              <th class="bg-yellow-300">A(Amenazas)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Soy muy paciente</td>
+                              <td>Mis hermanos pueden hacer una recomendacion en su trabajo</td>
+                              <td>Soy muy sentimental</td>
+                              <td>La delincuencia</td>
+                            </tr>
+                            <tr>
+                              <td>Se escuchar a los demas</td>
+                              <td>Trabajar un tiempo con mi padre como ayudante</td>
+                              <td>Soy muy debil fisicamente</td>
+                              <td>El desempleo</td>
+                            </tr>
+                            <tr>
+                              <td>Investigo mucho de un tema de mi agrado</td>
+                              <td>Tengo otros contactos para trabajo</td>
+                              <td>Me distraigo con facilidad</td>
+                              <td>El trafico</td>
+                            </tr>
+                            <tr>
+                              <td>Aprendo rapido si me lo propongo</td>
+                              <td>Puedo ayudar a mi hermano con su trabajo</td>
+                              <td>Me enfermo con facilidad</td>
+                              <td>La delincuencia</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                            <br>
+                            <p>Este es mi FODA, Fortalezas, Oportunidades, Debilidades y Amenazas</p>
+                            <br>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModalFODA()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <script>
         function mostrarModal() {
             document.querySelector("#modalCaratula").classList.remove("hidden");
@@ -583,6 +702,38 @@
         function ocultarModalmetyali() {
             document.querySelector("#modalmetyali").classList.add("hidden");
         }
+        function mostrarModalvalores() {
+            document.querySelector("#modalvalores").classList.remove("hidden");
+        }
+
+        function ocultarModalvalores() {
+            document.querySelector("#modalvalores").classList.add("hidden");
+        }
+        function mostrarModalFODA() {
+            document.querySelector("#modalFODA").classList.remove("hidden");
+        }
+
+        function ocultarModalFODA() {
+            document.querySelector("#modalFODA").classList.add("hidden");
+        }
+        module.exports = {
+  theme: {
+    extend: {
+      animation: {
+        wave: "wave 5s linear infinite",
+      },
+      keyframes: {
+        wave: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
+
+
       </script>
       
 </body>
