@@ -9,6 +9,7 @@
   .table-foda th, .table-foda td{
     border: solid 1px;
   }
+  
 </style>
 
 <link rel="stylesheet" href="fondo2.css">
@@ -16,7 +17,7 @@
 <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 <body>
     <header>
-        <a href="menu.html" class="logo">
+        <a href="index.html" class="logo">
             <img src="logo.jpg" alt="">
             <h2 class="titulo text-xl">Proyecto de vida</h2>
         </a>
@@ -35,9 +36,9 @@
     </header>
     <div class="wavy">
         <!----wave svg--->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,192C384,192,480,128,576,128C672,128,768,192,864,197.3C960,203,1056,149,1152,128C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         <h1 class="titulo2">Proyecto de vida</h1>
-        <h2 class="byme">por Dwight Perez</h2>
+        <h2 class="byme">por Dwight D'alessandro Perez Reyes</h2>
     </div>
     <br><br>
     
@@ -45,69 +46,78 @@
     <div class="container w-full flex justify-center">
 
    
-    <div id="card-caratula"class="flex justify-center flex-wrap w-2/3 gap-x-50 gap-y-12">
-        <div class="cajita">
-            <h2 class="font-semibold">Caratula</h2>
+    <div id="card-caratula"class=" flex justify-center flex-wrap w-2/3 gap-x-50 gap-y-12">
+        <div class="cajita" onclick="mostrarModal()">
+            <h2 class="font-semibold" >Caratula</h2>
             <p>Una pequeña introduccion sobre mi, mi nombre, mi profesor, y una foto mia para poder identificarme</p>
-            <button class="ver" onclick="mostrarModal()">ver mas</button>
         </div>
         
-        <div class="cajita">
+        <div class="cajita" onclick="mostrarModalpersonalidad()">
             <h2 class="font-semibold">Personalidad</h2>
             <p>Cuento sobre mi personalidad, no a detalle pero si digo lo necesario para conocerme</p>
-            <br>
-            <button class="ver" onclick="mostrarModalpersonalidad()">ver mas</button>      
+            <br>    
         </div>
         
-        <div class="cajita">
+        <div class="cajita" onclick="mostrarModalautorretrato()">
             <h2 class="font-semibold">Autorretrato</h2>
             <p>Aqui muestro y explico un poco de mi autorretrato, no es un dibujo muy complicado pero si me esforce haciendolo</p>
-            <button class="ver" onclick="mostrarModalautorretrato()">ver mas</button> 
+            <!-- <button class="ver" onclick="mostrarModalautorretrato()">ver mas</button>  -->
         </div>
         
-        <div class="cajita">
+        <div class="cajita" onclick="mostrarModalacrostico()">
             <h2 class="font-semibold">Acrostico</h2>
             <p>Un acrostico de mi nombre, con caracteristicas de mi persona, personalidad etc...</p>
-            <button class="ver" onclick="mostrarModalacrostico()">ver mas</button> 
+            <!-- <button class="ver" onclick="mostrarModalacrostico()">ver mas</button>  -->
         </div>
         
-        <div class="cajita">
+        <div class="cajita" onclick="mostrarModalbiografia()">
             <h2 class="font-semibold">Biografia</h2>
             <p>La historia de mi vida resumida en 4 etapas, infancia, niñez, adolecencia y juventud</p>
             <br>
-            <button class="ver" onclick="mostrarModalbiografia()">ver mas</button>
+            <!-- <button class="ver" onclick="mostrarModalbiografia()">ver mas</button> -->
         </div>
         
-        <div class="cajita">
+        <div class="cajita" onclick="mostrarModalvismis()">
             <h2 class="font-semibold">Vision y Mision</h2>
             <p>Mi vision y mision personal, lo que quiero hacer y hare, en pocas palabras</p>
             <br>
-            <button class="ver" onclick="mostrarModalvismis()">ver mas</button>
+            <!-- <button class="ver" onclick="mostrarModalvismis()">ver mas</button> -->
         </div>
         
-        <div class="cajita">
+        <div class="cajita" onclick="mostrarModalmetyali()">
             <h2 class="font-semibold">Metas y Aliados</h2>
             <p>Las metas que tengo, y mis aliados en cuestiones de la vida</p>
-            <button class="ver" onclick="mostrarModalmetyali()">ver mas</button>
+            <!-- <button class="ver" onclick="mostrarModalmetyali()">ver mas</button> -->
         </div>
         
-        <div class="cajita">
+        <div class="cajita"  onclick="mostrarModalvalores()">
             <h2 class="font-semibold">Valores</h2>
             <p>Los valores que tengo como persona, ya que los valores son muy importantes en alguien</p>
-            <button class="ver" onclick="mostrarModalvalores()">ver mas</button>
+            <!-- <button class="ver" onclick="mostrarModalvalores()">ver mas</button> -->
         </div>
         
-        <div class="cajita">
+        <div class="cajita"  onclick="mostrarModalestrategias()">
             <h2 class="font-semibold">Estrategias</h2>
             <p>Estrategias que pondre en practica en las areas prioritarias</p>
-            <a href="estrategias.html" class="ver">ver mas</a>
+            <!-- <button class="ver" onclick="mostrarModalestrategias()">ver mas</button> -->
         </div>
         
-        <div class="cajita">
+        <div class="cajita" onclick="mostrarModalFODA()">
             <h2 class="font-semibold">FODA</h2>
             <p>El FODA, mis fortalezas, oportunidades, debilidades y amenazas</p>
-            <button class="ver" onclick="mostrarModalFODA()">ver mas</button>
+            <!-- <button class="ver" onclick="mostrarModalFODA()">ver mas</button> -->
         </div>
+
+        <div class="cajita" onclick="mostrarModalConclusion()">
+          <h2 class="font-semibold">Conclusion</h2>
+          <p>Un resumen de todo lo que se ve en la pagina</p>
+          <!-- <button class="ver" onclick="mostrarModalFODA()">ver mas</button> -->
+      </div>
+      <div class="cajita" onclick="mostrarModalAgradecimientos()">
+        <h2 class="font-semibold">Agradecimientos</h2>
+        <p>Las gracias a esas personas que me apoyaron/ayudaron</p>
+        <!-- <button class="ver" onclick="mostrarModalFODA()">ver mas</button> -->
+    </div>
     </div>
   </div>
     <br><br>
@@ -138,7 +148,7 @@
                     <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Caratula</h3>
                     <div class="mt-2">
                       <section class="box text-lg">
-                        <div class="flex w-full justify-center">
+                        <div class="tarjetota flex w-full justify-center">
                             <img src="yo.jpeg" width="120" class="box-img border-4 border-double">
                         </div>
                         <br>
@@ -167,7 +177,7 @@
       </div>
 
       <!--modalpersonalidad-->
-      <div id="modalpersonalidad" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div id="modalpersonalidad" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         
         <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
       
@@ -206,7 +216,7 @@
       </div>
 
       <!--modalautorretrato-->
-      <div id="modalautorretrato" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div id="modalautorretrato" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         
         <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
       
@@ -245,7 +255,7 @@
       </div>
       
       <!--modalAcrostico-->
-      <div id="modalacrostico" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div id="modalacrostico" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         
         <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
       
@@ -261,12 +271,49 @@
                     <div class="mt-2">
                       <section class="box text-lg">
                         <div class="flex w-full justify-center">
-                            <img src="Acrostico.jpeg" class="box-img border-4 border-double">
+                            <h2 class="font-semibold text-7xl text-center text-red-600">D</h2>
+                            <p class="pt-6">
+                            ivertido
+                            </p>
+                        </div>
+                        <div class="flex w-full justify-center pr-7">
+                          <h2 class="font-semibold text-7xl text-center text-red-600">W</h2>
+                            <p class="pt-6">
+                              illing
+                            </p>
+                            
+                        </div>
+                        <div class="flex w-full justify-center pl-8">
+                          <h2 class="font-semibold text-7xl text-center text-red-600">I</h2>
+                            <p class="pt-6">
+                              maginativo
+                            </p>
+                            
+                        </div>
+                        <div class="flex w-full justify-center pr-4">
+                          <h2 class="font-semibold text-7xl text-center text-red-600">G</h2>
+                            <p class="pt-6">
+                              uapo
+                            </p>
+                            
+                        </div>
+                        <div class="flex w-full justify-center">
+                          <h2 class="font-semibold text-7xl text-center text-red-600">H</h2>
+                             <p class="pt-6">
+                              umilde
+                             </p>
+                             
+                        </div>
+                        <div class="flex w-full justify-center pl-3">
+                          <h2 class="font-semibold text-7xl text-center text-red-600">T</h2>
+                             <p class="pt-6">
+                              olerante
+                             </p>
                         </div>
                         <br>
                             <br>
-                            <p>En este acrostico intente poner caracteristicas sobre mi, en la D, Divertido, en la W, no hay palabras con w, asi que puse wisky,
-                                , en la I corrijo, quise decir Imaginativo, en la G, guapo porque tengo autoestima, H de humilde, y T, me gustaria corregir a tolerante
+                            <p>En este acrostico intente poner caracteristicas sobre mi, en la D, Divertido, en la W, puse Willing que significa servicial, ya que en español no hay caracteristicas con w
+                                , en la I originalmente puse Imaginador pero, quise decir Imaginativo, en la G, guapo porque tengo autoestima, H de humilde, y T, me gustaria corregir a tolerante
                                 ya que no se me ocurrio en el momento</p>
                             <br>
                         </section>
@@ -283,7 +330,7 @@
       </div>
 
       <!--modalBiografia-->
-      <div id="modalbiografia" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div id="modalbiografia" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         
         <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
       
@@ -353,7 +400,7 @@
       </div>
       
       <!--modalVision y Mision-->
-      <div id="modalvismis" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div id="modalvismis" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         
         <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
       
@@ -404,7 +451,7 @@
       </div>
 
       <!--modalMetas y Aliados-->
-      <div id="modalmetyali" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div id="modalmetyali" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         
         <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
       
@@ -548,7 +595,7 @@
       </div>
       
       <!--modalValores-->
-      <div id="modalvalores" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div id="modalvalores" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         
         <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
       
@@ -564,7 +611,7 @@
                     <div class="mt-2">
                       <section class="box text-lg">
                         <div class="flex w-full justify-center">
-                            <img src="valores.jpeg" width="" class="box-img">
+                            <img src="Valores.png" width="" class="box-img">
                         </div>
                         <br>
                             <br>
@@ -584,8 +631,88 @@
         </div>
       </div>
       <!--modalestrategias-->
+      <div id="modalestrategias" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Estrategias</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">
+                        <div class="flex w-full justify-center">
+                            <img src="estrategias.png" width="200" class="box-img border-4 border-double">
+                        </div>
+                        <br>
+                            <h2 class="font-semibold">Laboral</h2>
+                            <br>
+                            <p>
+                              Llevarme bien con mis compañeros de trabajo, jefe y otros empleados porque el tener aliados es bueno
+                              porque te pueden llegar a ayudar o hacer favores cuando se necesiten, por ejemplo cuando necesite que me cubran un día
+                            </p>
+                            <br>
+
+                            <h2 class="font-semibold">Academico</h2>
+                            <p>
+                              Platicar mas y amigar con mas personas de mi clase para que me ayuden con mis tareas o me puedan explicar
+                              temas que yo no entienda y ellos si.
+                            </p>
+                            <br>
+                            <h2 class="font-semibold">Espiritual</h2>
+                            <p>
+                              Cada que sienta que hice algo malo me pondria a pensar sobre lo que hice e intentar leer la biblia para sentirme mejor
+                              conmigo mismo y aprender al mismo tiempo
+                            </p>
+                            <br>
+                            <h2 class="font-semibold">Familiar</h2>
+                            <p>
+                              Limpiar siempre mi casa para tener un ambiente ordenado y que mi familia se sienta tranquila, y podamos tener momentos tranquilos en familia 
+                              sin preocuparse por la limpieza de la casa
+                            </p>
+                            <br>
+                            <h2 class="font-semibold">Social</h2>
+                            <p>
+                              Hablar poco a poco con mas personas para perder el miedo a socializar y poder ser, mas abierto, caerle bien a mas personas y
+                              saber comunicarme mejor con los demas
+                            </p>
+                            <br>
+                            <h2 class="font-semibold">Emocional</h2>
+                            <p>
+                              Actualmente para no sentirme mal, o sentirme mejor, me pongo a escuchar musica, la musica es mi terapia, me ayuda a no pensar en otras cosas
+                              y tambien me da energia y motivacion en el día
+                            </p>
+                            <br>
+                            <h2 class="font-semibold">Fisico</h2>
+                            <p>
+                              Ir al gimnasio almenos unas 3 veces a la semana, y si no quiero o no tengo motivacion podria ponerme a pensar
+                              que me ayudara en mucho estar en forma, y que tambien la salud es belleza
+                            </p>
+                            <br>
+                            <h2 class="font-semibold">Economico</h2>
+                            <p>Ahorrar bastante dinero para asi poder comprarme las cosas que mas anhelo, ya que mis gustos son algo caros tendre que ahorrar por ahora
+                              y a futuro ganar bastante dinero
+                            </p>
+                            <br>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModalestrategias()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--modalFODA-->
-      <div id="modalFODA" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div id="modalFODA" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         
         <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
       
@@ -653,9 +780,96 @@
           </div>
         </div>
       </div>
+      <!--modalAgradecimientos-->
+      <div id="modalAgradecimientos" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Agradecimientos</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">
+                        <br>
+                            <br>
+                            <h2 class="font-semibold"> GRACIAS A: </h2>
+                            <br>
+                            <p>
+                              Mi mamá<br>
+                              Mi papá<br>
+                              <strong>Mi hermano</strong> (me ayudo mucho con mi pagina) <br>
+                              Mi amigo Romeito <br>
+                              Mi amigo Hanssell <br>
+                              Dios<br>
+                              Mi amigo Aaron<br>
+                              Mi amigo Rodrigo<br>
+                              Iris<br>
+                              <strong>Playboi Carti</strong><br>
+                              Travis Scott <br>
+                              Kendrick Lamar <br>
+                              (porque su musica me mantuvo en píe al hacer esta pagina)
+                            </p>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModalAgradecimientos()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--modalConclusiones-->
+      <div id="modalConclusion" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+  
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="font-semibold text-gray-900 w-full text-center text-4xl" id="modal-title">Conclusion</h3>
+                    <div class="mt-2">
+                      <section class="box text-lg">
+                        
+                        <br>
+                            <br>
+                            <p> <strong>En conclusion:</strong>
+                              Este proyecto me hizo reflexionar mucho, me puse a pensar realmente "¿Quien soy?", me di cuenta de cosas que no sabia ni de mi mismo, tambien me di cuenta que
+                              tengo gente que me apoya, me quiere, y aprecia mi compañia, que en verdad soy alguien, y que tengo un objetivo en mi vida, quiero ser una persona importante para todos
+                              y tambien quiero ser exitoso por mi cuenta, he pasado por muchos bajones en mi vida, pero desde el año pasado me he sentido mucho mejor conmigo mismo. <br>
+                              he hecho muchas cosas que en años anteriores no pude hacer, mi autoestima subio en picada este ultimo año, me siento bien conmigo mismo, tambien me di cuenta que siempre se puede seguir mejorando
+                              y eso quiero hacer, es una de mis metas que estoy cumpliendo, cada vez mejorando como hermano, como hijo, como amigo y como persona. <br>
+                            </p>
+                            <br>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <button onclick="ocultarModalConclusion()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 sm:mt-0 sm:w-auto">Atras</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <script>
         function mostrarModal() {
             document.querySelector("#modalCaratula").classList.remove("hidden");
+            
         }
 
         function ocultarModal() {
@@ -715,6 +929,27 @@
 
         function ocultarModalFODA() {
             document.querySelector("#modalFODA").classList.add("hidden");
+        }
+        function mostrarModalestrategias() {
+            document.querySelector("#modalestrategias").classList.remove("hidden");
+        }
+
+        function ocultarModalestrategias() {
+            document.querySelector("#modalestrategias").classList.add("hidden");
+        }
+        function mostrarModalConclusion() {
+            document.querySelector("#modalConclusion").classList.remove("hidden");
+        }
+
+        function ocultarModalConclusion() {
+            document.querySelector("#modalConclusion").classList.add("hidden");
+        }
+        function mostrarModalAgradecimientos() {
+            document.querySelector("#modalAgradecimientos").classList.remove("hidden");
+        }
+
+        function ocultarModalAgradecimientos() {
+            document.querySelector("#modalAgradecimientos").classList.add("hidden");
         }
         module.exports = {
   theme: {
